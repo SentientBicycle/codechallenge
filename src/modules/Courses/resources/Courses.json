@@ -1,0 +1,1210 @@
+{  
+   "Primary Subjects":[  
+      {  
+         "Language Arts":{  
+            "id":0
+         }
+      },
+      {  
+         "Mathematics":{  
+            "id":1
+         }
+      },
+      {  
+         "Science":{  
+            "id":2
+         }
+      },
+      {  
+         "Health":{  
+            "id":3
+         }
+      },
+      {  
+         "Handwriting":{  
+            "id":4
+         }
+      },
+      {  
+         "Physical Education":{  
+            "id":5
+         }
+      },
+      {  
+         "Art":{  
+            "id":6
+         }
+      },
+      {  
+         "Music":{  
+            "id":7
+         }
+      },
+      {  
+         "Drama":{  
+            "id":8
+         }
+      },
+      {  
+         "Dance":{  
+            "id":9
+         }
+      },
+      {  
+         "Spanish":{  
+            "id":10
+         }
+      },
+      {  
+         "Leadership":{  
+            "id":11
+         }
+      },
+      {  
+         "Special Education Day Class":{  
+            "id":12
+         }
+      },
+      {  
+         "Resource Program":{  
+            "id":13
+         }
+      },
+      {  
+         "Speech":{  
+            "id":14
+         }
+      },
+      {  
+         "Adaptive P.E.":{  
+            "id":15
+         }
+      },
+      {  
+         "Occupational Therapy":{  
+            "id":16
+         }
+      }
+   ],
+   "Middle School Subjects":[  
+      {  
+         "Reading":{  
+            "id":17
+         }
+      },
+      {  
+         "Language arts":{  
+            "id":18
+         }
+      },
+      {  
+         "Speech and Debate":{  
+            "id":19
+         }
+      },
+      {  
+         "English":{  
+            "id":20
+         }
+      },
+      {  
+         "Basic Math":{  
+            "id":21
+         }
+      },
+      {  
+         "Pre-algebra":{  
+            "id":22
+         }
+      },
+      {  
+         "Consumer Math":{  
+            "id":23
+         }
+      },
+      {  
+         "Algebra":{  
+            "id":24
+         }
+      },
+      {  
+         "Geometry":{  
+            "id":25
+         }
+      },
+      {  
+         "Life Science":{  
+            "id":26
+         }
+      },
+      {  
+         "Earth Science":{  
+            "id":27
+         }
+      },
+      {  
+         "Physical Science":{  
+            "id":28
+         }
+      },
+      {  
+         "Health":{  
+            "id":29
+         }
+      },
+      {  
+         "Social Studies":{  
+            "id":30
+         }
+      },
+      {  
+         "Geography":{  
+            "id":31
+         }
+      },
+      {  
+         "Ancient Civilizations":{  
+            "id":32
+         }
+      },
+      {  
+         "Medieval and Renaissance":{  
+            "id":33
+         }
+      },
+      {  
+         "U.S. History and Government":{  
+            "id":34
+         }
+      },
+      {  
+         "Computer Science":{  
+            "id":35
+         }
+      },
+      {  
+         "Art":{  
+            "id":36
+         }
+      },
+      {  
+         "Home Economics":{  
+            "id":37
+         }
+      },
+      {  
+         "Woodshop":{  
+            "id":38
+         }
+      },
+      {  
+         "Metal Shop":{  
+            "id":39
+         }
+      },
+      {  
+         "Business Technology":{  
+            "id":40
+         }
+      },
+      {  
+         "Instrumental Music":{  
+            "id":41
+         }
+      },
+      {  
+         "Band":{  
+            "id":42
+         }
+      },
+      {  
+         "Choir":{  
+            "id":43
+         }
+      },
+      {  
+         "Drama":{  
+            "id":44
+         }
+      },
+      {  
+         "Physical Education":{  
+            "id":45
+         }
+      },
+      {  
+         "Sports":{  
+            "id":46
+         }
+      },
+      {  
+         "Special Education Day Class":{  
+            "id":47
+         }
+      },
+      {  
+         "Resource Program":{  
+            "id":48
+         }
+      },
+      {  
+         "Speech Therapy":{  
+            "id":49
+         }
+      },
+      {  
+         "Occupational Therapy":{  
+            "id":50
+         }
+      }
+   ],
+   "High School Subjects":[  
+      {  
+         "English I":{  
+            "id":51
+         }
+      },
+      {  
+         "English II":{  
+            "id":52
+         }
+      },
+      {  
+         "English III":{  
+            "id":53
+         }
+      },
+      {  
+         "English IV":{  
+            "id":54
+         }
+      },
+      {  
+         "Remedial English":{  
+            "id":55
+         }
+      },
+      {  
+         "ESL":{  
+            "id":56
+         }
+      },
+      {  
+         "World Literature":{  
+            "id":57
+         }
+      },
+      {  
+         "Ancient Literature":{  
+            "id":58
+         }
+      },
+      {  
+         "Medieval Literature":{  
+            "id":59
+         }
+      },
+      {  
+         "Renaissance Literature":{  
+            "id":60
+         }
+      },
+      {  
+         "Modern Literature":{  
+            "id":61
+         }
+      },
+      {  
+         "British Literature":{  
+            "id":62
+         }
+      },
+      {  
+         "American Literature":{  
+            "id":63
+         }
+      },
+      {  
+         "Composition":{  
+            "id":64
+         }
+      },
+      {  
+         "Creative Writing":{  
+            "id":65
+         }
+      },
+      {  
+         "Poetry":{  
+            "id":66
+         }
+      },
+      {  
+         "Grammar":{  
+            "id":67
+         }
+      },
+      {  
+         "Vocabulary":{  
+            "id":68
+         }
+      },
+      {  
+         "Debate":{  
+            "id":69
+         }
+      },
+      {  
+         "Speech":{  
+            "id":70
+         }
+      },
+      {  
+         "Journalism":{  
+            "id":71
+         }
+      },
+      {  
+         "Publishing Skills":{  
+            "id":72
+         }
+      },
+      {  
+         "Photojournalism":{  
+            "id":73
+         }
+      },
+      {  
+         "Yearbook":{  
+            "id":74
+         }
+      },
+      {  
+         "Study Skills":{  
+            "id":75
+         }
+      },
+      {  
+         "Research Skills":{  
+            "id":76
+         }
+      }
+   ],
+   "FINE ARTS":[  
+      {  
+         "Art I":{  
+            "id":77
+         }
+      },
+      {  
+         "Art II":{  
+            "id":78
+         }
+      },
+      {  
+         "Art III":{  
+            "id":79
+         }
+      },
+      {  
+         "Art IV":{  
+            "id":80
+         }
+      },
+      {  
+         "Art Appreciation":{  
+            "id":81
+         }
+      },
+      {  
+         "Art History":{  
+            "id":82
+         }
+      },
+      {  
+         "Drawing":{  
+            "id":83
+         }
+      },
+      {  
+         "Painting":{  
+            "id":84
+         }
+      },
+      {  
+         "Sculpture":{  
+            "id":85
+         }
+      },
+      {  
+         "Ceramics":{  
+            "id":86
+         }
+      },
+      {  
+         "Pottery":{  
+            "id":87
+         }
+      },
+      {  
+         "Instrumental Music":{  
+            "id":88
+         }
+      },
+      {  
+         "Music Appreciation":{  
+            "id":89
+         }
+      },
+      {  
+         "Music History":{  
+            "id":90
+         }
+      },
+      {  
+         "Music Theory":{  
+            "id":91
+         }
+      },
+      {  
+         "Music Fundamentals":{  
+            "id":92
+         }
+      },
+      {  
+         "Band":{  
+            "id":93
+         }
+      },
+      {  
+         "Orchestra":{  
+            "id":94
+         }
+      },
+      {  
+         "Choir":{  
+            "id":95
+         }
+      },
+      {  
+         "Voice":{  
+            "id":96
+         }
+      },
+      {  
+         "Classical Music Studies":{  
+            "id":97
+         }
+      },
+      {  
+         "Performing Arts":{  
+            "id":98
+         }
+      },
+      {  
+         "Theatre Arts":{  
+            "id":99
+         }
+      },
+      {  
+         "Dance":{  
+            "id":100
+         }
+      }
+   ],
+   "APPLIED ARTS":[  
+      {  
+         "Computer Aided Design":{  
+            "id":101
+         }
+      },
+      {  
+         "Photography":{  
+            "id":102
+         }
+      },
+      {  
+         "Leather Working":{  
+            "id":103
+         }
+      },
+      {  
+         "Drafting":{  
+            "id":104
+         }
+      },
+      {  
+         "Metal Work":{  
+            "id":105
+         }
+      },
+      {  
+         "Small Engine Mechanics":{  
+            "id":106
+         }
+      },
+      {  
+         "Auto Mechanics":{  
+            "id":107
+         }
+      }
+   ],
+   "SCIENCE":[  
+      {  
+         "General Science":{  
+            "id":108
+         }
+      },
+      {  
+         "Physics":{  
+            "id":109
+         }
+      },
+      {  
+         "Physical Science":{  
+            "id":110
+         }
+      },
+      {  
+         "Chemistry":{  
+            "id":111
+         }
+      },
+      {  
+         "Organic Chemistry":{  
+            "id":112
+         }
+      },
+      {  
+         "Life Science":{  
+            "id":113
+         }
+      },
+      {  
+         "Biology":{  
+            "id":114
+         }
+      },
+      {  
+         "Zoology":{  
+            "id":115
+         }
+      },
+      {  
+         "Marine Biology":{  
+            "id":116
+         }
+      },
+      {  
+         "Botany":{  
+            "id":117
+         }
+      },
+      {  
+         "Earth Science":{  
+            "id":118
+         }
+      },
+      {  
+         "Geology":{  
+            "id":119
+         }
+      },
+      {  
+         "Oceanography":{  
+            "id":120
+         }
+      },
+      {  
+         "Meteorology":{  
+            "id":121
+         }
+      },
+      {  
+         "Astronomy":{  
+            "id":122
+         }
+      },
+      {  
+         "Animal Science":{  
+            "id":123
+         }
+      },
+      {  
+         "Equine Science":{  
+            "id":124
+         }
+      },
+      {  
+         "Veterinary Science":{  
+            "id":125
+         }
+      },
+      {  
+         "Forensic Science":{  
+            "id":126
+         }
+      },
+      {  
+         "Ecology":{  
+            "id":127
+         }
+      },
+      {  
+         "Environmental Science":{  
+            "id":128
+         }
+      },
+      {  
+         "Gardening":{  
+            "id":129
+         }
+      },
+      {  
+         "Food Science":{  
+            "id":130
+         }
+      }
+   ],
+   "FOREIGN LANGUAGE":[  
+      {  
+         "Spanish":{  
+            "id":131
+         }
+      },
+      {  
+         "French":{  
+            "id":132
+         }
+      },
+      {  
+         "Japanese":{  
+            "id":133
+         }
+      },
+      {  
+         "German":{  
+            "id":134
+         }
+      },
+      {  
+         "Latin":{  
+            "id":135
+         }
+      },
+      {  
+         "Greek":{  
+            "id":136
+         }
+      },
+      {  
+         "Hebrew":{  
+            "id":137
+         }
+      },
+      {  
+         "Chinese":{  
+            "id":138
+         }
+      },
+      {  
+         "Sign Language":{  
+            "id":139
+         }
+      }
+   ],
+   "MATH":[  
+      {  
+         "Remedial Math":{  
+            "id":140
+         }
+      },
+      {  
+         "Fundamental Math or Basic Math":{  
+            "id":141
+         }
+      },
+      {  
+         "Mathematics":{  
+            "id":142
+         }
+      },
+      {  
+         "Pre-Algebra":{  
+            "id":143
+         }
+      },
+      {  
+         "Introduction to Algebra":{  
+            "id":144
+         }
+      },
+      {  
+         "Algebra":{  
+            "id":145
+         }
+      },
+      {  
+         "Algebra I":{  
+            "id":146
+         }
+      },
+      {  
+         "Algebra II":{  
+            "id":147
+         }
+      },
+      {  
+         "Intermediate Algebra":{  
+            "id":148
+         }
+      },
+      {  
+         "Geometry":{  
+            "id":149
+         }
+      },
+      {  
+         "Trigonometry":{  
+            "id":150
+         }
+      },
+      {  
+         "Precalculus":{  
+            "id":151
+         }
+      },
+      {  
+         "Calculus":{  
+            "id":152
+         }
+      },
+      {  
+         "Statistics":{  
+            "id":153
+         }
+      },
+      {  
+         "Business Math":{  
+            "id":154
+         }
+      },
+      {  
+         "Consumer Math":{  
+            "id":155
+         }
+      },
+      {  
+         "Accounting":{  
+            "id":156
+         }
+      },
+      {  
+         "Personal Finance and Investing":{  
+            "id":157
+         }
+      }
+   ],
+   "SOCIAL STUDIES":[  
+      {  
+         "Ancient History":{  
+            "id":158
+         }
+      },
+      {  
+         "Medieval History":{  
+            "id":159
+         }
+      },
+      {  
+         "Greek and Roman History":{  
+            "id":160
+         }
+      },
+      {  
+         "Renaissance History with US History":{  
+            "id":161
+         }
+      },
+      {  
+         "Modern History with US History":{  
+            "id":162
+         }
+      },
+      {  
+         "World History":{  
+            "id":163
+         }
+      },
+      {  
+         "World Geography":{  
+            "id":164
+         }
+      },
+      {  
+         "US History":{  
+            "id":165
+         }
+      },
+      {  
+         "World Religions":{  
+            "id":166
+         }
+      },
+      {  
+         "World Current Events":{  
+            "id":167
+         }
+      },
+      {  
+         "Government":{  
+            "id":168
+         }
+      },
+      {  
+         "Civics":{  
+            "id":169
+         }
+      },
+      {  
+         "Economics":{  
+            "id":170
+         }
+      },
+      {  
+         "Political Science":{  
+            "id":171
+         }
+      },
+      {  
+         "Social Sciences":{  
+            "id":172
+         }
+      },
+      {  
+         "Psychology":{  
+            "id":173
+         }
+      },
+      {  
+         "Sociology":{  
+            "id":174
+         }
+      },
+      {  
+         "Anthropology":{  
+            "id":175
+         }
+      },
+      {  
+         "Genealogy":{  
+            "id":176
+         }
+      },
+      {  
+         "Philosophy":{  
+            "id":177
+         }
+      },
+      {  
+         "LOGIC":{  
+            "id":178
+         }
+      },
+      {  
+         "Logic I":{  
+            "id":179
+         }
+      },
+      {  
+         "Logic II":{  
+            "id":180
+         }
+      },
+      {  
+         "Critical Thinking":{  
+            "id":181
+         }
+      },
+      {  
+         "Rhetoric":{  
+            "id":182
+         }
+      }
+   ],
+   "HEALTH":[  
+      {  
+         "Health":{  
+            "id":183
+         }
+      },
+      {  
+         "Basic First Aid and Safety":{  
+            "id":184
+         }
+      },
+      {  
+         "Nutrition":{  
+            "id":185
+         }
+      },
+      {  
+         "Healthful Living":{  
+            "id":186
+         }
+      }
+   ],
+   "PHYSICAL EDUCATION":[  
+      {  
+         "Team Sports":{  
+            "id":187
+         }
+      },
+      {  
+         "Gymnastics":{  
+            "id":188
+         }
+      },
+      {  
+         "Track and Field":{  
+            "id":189
+         }
+      },
+      {  
+         "Archery":{  
+            "id":190
+         }
+      },
+      {  
+         "Fencing":{  
+            "id":191
+         }
+      },
+      {  
+         "Golf":{  
+            "id":192
+         }
+      },
+      {  
+         "Rock Climbing":{  
+            "id":193
+         }
+      },
+      {  
+         "Outdoor Survival Skills":{  
+            "id":194
+         }
+      },
+      {  
+         "Hiking":{  
+            "id":195
+         }
+      },
+      {  
+         "Equestrian Skills":{  
+            "id":196
+         }
+      },
+      {  
+         "Weightlifting":{  
+            "id":197
+         }
+      },
+      {  
+         "Physical Fitness":{  
+            "id":198
+         }
+      },
+      {  
+         "Aerobics":{  
+            "id":199
+         }
+      },
+      {  
+         "Yoga":{  
+            "id":200
+         }
+      },
+      {  
+         "Martial Arts":{  
+            "id":201
+         }
+      },
+      {  
+         "Ice Skating":{  
+            "id":202
+         }
+      },
+      {  
+         "Figure skating":{  
+            "id":203
+         }
+      },
+      {  
+         "Cycling":{  
+            "id":204
+         }
+      },
+      {  
+         "Bowling":{  
+            "id":205
+         }
+      },
+      {  
+         "Cheer":{  
+            "id":206
+         }
+      },
+      {  
+         "Adapted P.E.":{  
+            "id":207
+         }
+      }
+   ],
+   "COMPUTERS":[  
+      {  
+         "Keyboarding":{  
+            "id":208
+         }
+      },
+      {  
+         "Word Processing":{  
+            "id":209
+         }
+      },
+      {  
+         "Computer Aided Drafting":{  
+            "id":210
+         }
+      },
+      {  
+         "Computer Graphics":{  
+            "id":211
+         }
+      },
+      {  
+         "Digital Arts":{  
+            "id":212
+         }
+      },
+      {  
+         "Photoshop":{  
+            "id":213
+         }
+      },
+      {  
+         "Programming":{  
+            "id":214
+         }
+      },
+      {  
+         "Computer Repair":{  
+            "id":215
+         }
+      },
+      {  
+         "Web Design":{  
+            "id":216
+         }
+      },
+      {  
+         "Desktop Publishing":{  
+            "id":217
+         }
+      },
+      {  
+         "LIFE SKILLS":{  
+            "id":218
+         }
+      },
+      {  
+         "Culinary Arts":{  
+            "id":219
+         }
+      },
+      {  
+         "Child Development":{  
+            "id":220
+         }
+      },
+      {  
+         "Home Management":{  
+            "id":221
+         }
+      },
+      {  
+         "Home Organization":{  
+            "id":222
+         }
+      },
+      {  
+         "Basic Yard Care":{  
+            "id":223
+         }
+      },
+      {  
+         "Financial Management":{  
+            "id":224
+         }
+      },
+      {  
+         "Driver’s Education":{  
+            "id":225
+         }
+      },
+      {  
+         "Personal Organization":{  
+            "id":226
+         }
+      },
+      {  
+         "Social Skills":{  
+            "id":227
+         }
+      },
+      {  
+         "Career Planning":{  
+            "id":228
+         }
+      }
+   ],
+   "OTHER":[  
+      {  
+         "Study Skills":{  
+            "id":229
+         }
+      },
+      {  
+         "SAT Prep":{  
+            "id":230
+         }
+      },
+      {  
+         "Work-Study":{  
+            "id":231
+         }
+      }
+   ],
+   "SPECIAL EDUCATION":[  
+      {  
+         "Lifeskills":{  
+            "id":232
+         }
+      },
+      {  
+         "Resource Program":{  
+            "id":233
+         }
+      },
+      {  
+         "Speech":{  
+            "id":234
+         }
+      },
+      {  
+         "Special Day Class":{  
+            "id":235
+         }
+      }
+   ]
+}

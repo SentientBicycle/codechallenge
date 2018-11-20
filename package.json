@@ -1,18 +1,25 @@
 {
-  "name": "nwea",
+  "name": "codechallenge",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sentientbicycle.github.io/codechallenge",
   "dependencies": {
-    "jest": "^23.6.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "gh-pages": "^2.0.1",
+    "normalize.css": "^8.0.1",
+    "react": "^16.6.0",
+    "react-css-modules": "^4.7.7",
+    "react-dom": "^16.6.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -22,5 +29,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.1",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.12.1"
+  }
 }

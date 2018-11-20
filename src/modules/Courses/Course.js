@@ -12,7 +12,7 @@ class Course extends Component {
 
   allConform = (courses, courseID) => {
     let hasClass = false;
-    courses.map(course => {if (course.id === courseID) hasClass = true})
+    courses.foreach(course => {if (course.id === courseID) hasClass = true})
     return hasClass;
   } 
 

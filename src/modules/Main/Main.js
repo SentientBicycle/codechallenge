@@ -6,9 +6,9 @@ import Courses from '../Courses/Courses'
 class Main extends Component {
   render() {
     return (
-    	<section>
+    	<React.Fragment>
         <Courses/>
-      </section>
+      </React.Fragment>
     );
   }
 }

@@ -61,7 +61,7 @@
          }
       },
       {  
-         "Special Education Day Class":{  
+         "Special Education":{  
             "id":12
          }
       },
@@ -173,7 +173,7 @@
          }
       },
       {  
-         "U.S. History and Government":{  
+         "U.S. History":{  
             "id":34
          }
       },
@@ -720,7 +720,7 @@
          }
       },
       {  
-         "Fundamental Math or Basic Math":{  
+         "Fundamental Math":{  
             "id":141
          }
       },
@@ -800,7 +800,7 @@
          }
       },
       {  
-         "Personal Finance and Investing":{  
+         "Personal Finance":{  
             "id":157
          }
       }
@@ -822,12 +822,12 @@
          }
       },
       {  
-         "Renaissance History with US History":{  
+         "Renaissance History":{  
             "id":161
          }
       },
       {  
-         "Modern History with US History":{  
+         "Modern History":{  
             "id":162
          }
       },
@@ -939,7 +939,7 @@
          }
       },
       {  
-         "Basic First Aid and Safety":{  
+         "Basic First Aid":{  
             "id":184
          }
       },

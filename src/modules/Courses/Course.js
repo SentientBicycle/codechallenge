@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import data from './resources/Students.json'
-
+import studentData from './resources/Students.json';
+import Student from './components/Student/Student';
+import StudentCompare from './components/Student/StudentCompare';
+import style from './Courses.module.css';
 class Course extends Component {
  
 
@@ -9,6 +11,7 @@ class Course extends Component {
 
     this.state = {
       courseid: parseInt(props.match.params.courseid),
+      coursename: props.match.params.coursename,
       students: this.getStudents(parseInt(props.match.params.courseid)),
       comparing: []
     }
@@ -16,7 +19,7 @@ class Course extends Component {
   }
 
   getStudents = (courseid) => {
-    return data.filter(student => {return this.hasCourse(student.Classes, courseid)});
+    return studentData.filter(student => {return this.hasCourse(student.Classes, courseid)});
   }
 
   hasCourse = (courses, courseID) => {
@@ -26,14 +29,27 @@ class Course extends Component {
   }
 
   addToComparator = (studentID) => {
-    console.log(this.state);
     const sid = parseInt(studentID);
     const newState = {...this.state};
     const compare = newState.comparing.filter(student => {return student.id !== sid}).concat(this.setCurrentCourse(newState.students.filter(student =>{return student.id === sid})));
-    console.log(compare);
-    newState.comparing = compare.sort((a, b) => {return b.currentClassScore - a.currentClassScore} )
+    newState.comparing = compare.sort((a,b)=>this.sortByLastName(a,b))
     this.setState(newState);
+  }
 
+  removeFromComparator = (studentID) => {
+    const sid = parseInt(studentID);
+    const newState = {...this.state};
+    const compare = newState.comparing.filter(student => {return student.id !== sid});
+    newState.comparing = compare;
+    this.setState(newState);
+  }
+
+  sortByLastName = (a, b) => {
+    return a.last_name.toLowerCase().localeCompare(b.last_name.toLowerCase());
+  }
+
+  sortByScore = (a, b) => {
+    return b.currentClassScore - a.currentClassScore;
   }
 
   setCurrentCourse = (student) => {
@@ -42,20 +58,29 @@ class Course extends Component {
     let courseScore;
     student[0].Classes.forEach(course => {if(course.id === this.state.courseid) courseScore = course.score });
     moddedStudent[0].currentClassScore = courseScore;
+    moddedStudent[0].active = true;
     return moddedStudent[0];
+  }
+
+  setCurrentCourseSource = (student) => {
+    const moddedStudent = {...student};
+    moddedStudent.currentClass = this.state.courseid;
+    let courseScore;
+    student.Classes.forEach(course => {if(course.id === this.state.courseid) courseScore = course.score });
+    moddedStudent.currentClassScore = courseScore;
+    return moddedStudent;
   }
 
   render() {
     return (
     	<React.Fragment>
         <section>
-          <div>
-            {this.state.comparing.map((compare, index) => {return <div key={index} onClick={(e) => this.addToComparator(`${compare.id}`)}>{compare.first_name}</div>})}
+        <h1>{this.state.coursename}</h1>
+          <div className={`${style.container} ${style['container-left']}`}>
+            {this.state.students.map((student, index) => {return <Student key={index} addtocompare={this.addToComparator} student={this.setCurrentCourseSource(student)}/>})}
           </div>
         </section>
-        <section>
-          {this.state.students.map((student, index) => {return <div key={index}><button onClick={(e) => this.addToComparator(`${student.id}`)}>{`${student.first_name} ${student.last_name}`}</button></div>})}
-        </section>
+        <button className={style['compare-button']}>Compare Selected Students</button>
       </React.Fragment>
     );
   }

@@ -16,7 +16,7 @@ class Courses extends Component {
         				<h1 className={style.clear}>{subjects}</h1>
         				<div>
         					{data[subjects].map((classes, id) => {
-        						return <Link key={id} to={`${classes[Object.keys(classes)].id}`}>
+        						return <Link key={id}  to={`${classes[Object.keys(classes)].id}/${Object.keys(classes)}`}>
 	        								<div className={style.card} key={id}>
 	        									<p>{Object.keys(classes)}</p>
 	        									<p>{`Class ID: ${classes[Object.keys(classes)].id}`}</p>

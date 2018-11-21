@@ -1,7 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Student Comparator application
+
+This site uses the module/component folder structure.
+
+###To create a new route
+* Add module to `/src/modules` with camel case naming scheme
+* Add import to `/src/modules/App/App.js` and add ```
+<Route exact path='/PATH_NAME' component={ComponentName}/>
+```
+
+###Course Addition
+
+Course data can be found in `/src/modules/Courses/resources/Courses.json`
+
+To add a course, add to the json file in the structure of
+`{  
+    "Class Name":{  
+            "id":[unique id number]
+         }
+},` within a category array.
+
+To add a category, add to the json file in the structure of `"New Subject Category":[]`
+
+###Student Addition
+
+Student data can be found in `/src/modules/Courses/resources/Students.json`
+
+To add a student, add to the json file in the structure of  
+
+`{"id":[unique id],"first_name":"first name","last_name":"last name","email":"example@example.com","gender":"maleorfemale","Classes":[{"score":[score between 0 and 100],"id":[class id found in Courses.json]}`
+
+To add a class to a student, find the student in the Students.json file and add the class id and score to the "Classes" array.
+
+##Other tools used
+[Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`

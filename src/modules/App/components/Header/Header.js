@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 import { CssConcat } from '../../../../utils/CssConcat';
@@ -19,10 +18,7 @@ export function Header(props, context) {
 	        </h1>
 	        <div className={siteLinksCss}>
 	        	<Link to="/Students">
-	        		Students
-	        	</Link>
-	        	<Link to="/Classes">
-	        		Classes
+	        		   
 	        	</Link>
 	        </div>
 	      </div>

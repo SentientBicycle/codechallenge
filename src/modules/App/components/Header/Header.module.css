@@ -16,7 +16,8 @@
   width: 100%;
   max-width: 980px;
   margin: auto;
-  overflow: auto;
+
+  height: 50px;
 }
 
 .site-title {

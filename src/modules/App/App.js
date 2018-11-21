@@ -16,6 +16,8 @@ class App extends Component {
         <main>
           <Switch>
             <Route exact path='/' component={Main}/>
+            <Route exact path='/codechallenge' component={Main}/>
+            <Route exact path='/codechallenge/:courseid/:coursename' component={Course}/>
             <Route exact path='/:courseid/:coursename' component={Course}/>
           </Switch>
         </main>

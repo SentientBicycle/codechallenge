@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import studentData from './resources/Students.json';
 import Student from './components/Student/Student';
 import StudentCompare from './components/Student/StudentCompare';
+import CompareModal from './components/CompareModal/CompareModal';
 import style from './Courses.module.css';
+import { Button } from 'react-bootstrap';
+
 class Course extends Component {
  
 
@@ -19,7 +22,8 @@ class Course extends Component {
   }
 
   getStudents = (courseid) => {
-    return studentData.filter(student => {return this.hasCourse(student.Classes, courseid)});
+    const filteredStudents = studentData.filter(student => {return this.hasCourse(student.Classes, courseid)});
+    return filteredStudents.map(student => this.setCurrentCourse(student));
   }
 
   hasCourse = (courses, courseID) => {
@@ -28,21 +32,27 @@ class Course extends Component {
     return hasClass;
   }
 
-  addToComparator = (studentID) => {
+  addToRemoveFromComparator = (studentID) => {
     const sid = parseInt(studentID);
     const newState = {...this.state};
-    const compare = newState.comparing.filter(student => {return student.id !== sid}).concat(this.setCurrentCourse(newState.students.filter(student =>{return student.id === sid})));
-    newState.comparing = compare.sort((a,b)=>this.sortByLastName(a,b))
+    let indexOfStudent;
+    const singleStudent = newState.students.filter((student, index) =>{if(student.id === sid){indexOfStudent = index;} return student.id === sid;})[0];
+    const newCompare = this.alreadyContainsStudent(newState.comparing, sid) ? newState.comparing.filter(student => {return student.id !== sid}) : newState.comparing.concat(singleStudent);
+    newState.students[indexOfStudent].active = !newState.students[indexOfStudent].active;
+    newState.comparing = newCompare.sort((a,b)=>this.sortByLastName(a,b))
     this.setState(newState);
   }
 
-  removeFromComparator = (studentID) => {
-    const sid = parseInt(studentID);
-    const newState = {...this.state};
-    const compare = newState.comparing.filter(student => {return student.id !== sid});
-    newState.comparing = compare;
-    this.setState(newState);
+  alreadyContainsStudent = (students, sid) => {
+    let hasStudent = false;
+    students.forEach(student =>{
+      if(student.id === sid) {
+        hasStudent = true;
+      }
+    });
+    return hasStudent;
   }
+
 
   sortByLastName = (a, b) => {
     return a.last_name.toLowerCase().localeCompare(b.last_name.toLowerCase());
@@ -54,19 +64,9 @@ class Course extends Component {
 
   setCurrentCourse = (student) => {
     const moddedStudent = {...student};
-    moddedStudent[0].currentClass = this.state.courseid;
+    moddedStudent.currentClass = parseInt(this.props.match.params.courseid);
     let courseScore;
-    student[0].Classes.forEach(course => {if(course.id === this.state.courseid) courseScore = course.score });
-    moddedStudent[0].currentClassScore = courseScore;
-    moddedStudent[0].active = true;
-    return moddedStudent[0];
-  }
-
-  setCurrentCourseSource = (student) => {
-    const moddedStudent = {...student};
-    moddedStudent.currentClass = this.state.courseid;
-    let courseScore;
-    student.Classes.forEach(course => {if(course.id === this.state.courseid) courseScore = course.score });
+    student.Classes.forEach(course => {if(course.id === parseInt(this.props.match.params.courseid)) courseScore = course.score });
     moddedStudent.currentClassScore = courseScore;
     return moddedStudent;
   }
@@ -77,10 +77,18 @@ class Course extends Component {
         <section>
         <h1>{this.state.coursename}</h1>
           <div className={`${style.container} ${style['container-left']}`}>
-            {this.state.students.map((student, index) => {return <Student key={index} addtocompare={this.addToComparator} student={this.setCurrentCourseSource(student)}/>})}
+            {this.state.students.map((student, index) => {
+              return <Student 
+                        key={index} 
+                        addtocompare={this.addToRemoveFromComparator} 
+                        student={student}
+                        />
+                    }
+                )
+            }
           </div>
         </section>
-        <button className={style['compare-button']}>Compare Selected Students</button>
+        <CompareModal coursename={this.state.coursename} students={this.state.comparing}/>
       </React.Fragment>
     );
   }

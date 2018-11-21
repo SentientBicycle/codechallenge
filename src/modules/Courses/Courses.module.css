@@ -13,15 +13,13 @@
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    margin-top: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     width: 100%;
     position: relative;
     float: left;
 }
 
-.card-active {
-   
-}
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
@@ -95,6 +93,11 @@
 
   .compare-button {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    z-index: 9999;
+    right: 10px;
+    top: 7.5px;
   }
+
+.modal-compare {
+    margin-top: 30px;
+}

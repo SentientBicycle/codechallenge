@@ -3,9 +3,6 @@ import style from '../../Courses.module.css';
 
 class Student extends Component {
 
-	addremovescore = () => {
-
-	}
 
   render() {
 

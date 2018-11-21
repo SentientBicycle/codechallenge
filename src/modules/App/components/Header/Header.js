@@ -18,10 +18,7 @@ export function Header(props, context) {
 	        </h1>
 	        <div className={siteLinksCss}>
 	        	<Link to="/Students">
-	        		Students
-	        	</Link>
-	        	<Link to="/Classes">
-	        		Classes
+	        		   
 	        	</Link>
 	        </div>
 	      </div>

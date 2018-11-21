@@ -5,7 +5,7 @@ class StudentCompare extends Component {
   render() {
     return (
     	<div className={style['card-compare']}>
-    		<div className={style['compare-content-left']} onClick={(e) => this.props.removeFromComparator(`${this.props.student.id}`)}>{this.props.student.first_name} {this.props.student.last_name}</div>
+    		<div className={style['compare-content-left']}>{this.props.student.first_name} {this.props.student.last_name}</div>
     		<div className={style['compare-content-right']}>{this.props.student.currentClassScore}</div>
     	</div>
     );

@@ -45,7 +45,7 @@ class CompareModal extends Component {
           <Modal.Body>
             <h4>Comparison</h4>
             <div>
-              {this.props.students.map(student=> {return <StudentCompare student={student}/>})}
+              {this.props.students.map((student, index)=> {return <StudentCompare key={index} student={student}/>})}
               </div>
           </Modal.Body>
           <Modal.Footer>

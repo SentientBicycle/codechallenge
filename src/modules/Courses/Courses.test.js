@@ -9,7 +9,6 @@ configure({ adapter: new Adapter() });
 describe("Courses", () =>{
 	it('Renders properly', () => {
 	  const course = shallow(<Courses/>);
-	 // course.instance({ params: props.match.params});
 	  expect(course).toMatchSnapshot();
 	});
 });

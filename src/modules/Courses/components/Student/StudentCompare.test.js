@@ -16,7 +16,7 @@ const props = {
 
 describe("StudentCompare", () =>{
 	it('Renders properly', () => {
-	  const course = shallow(<StudentCompare {...props}/>);
-	  expect(course).toMatchSnapshot();
+	  const sc = shallow(<StudentCompare {...props}/>);
+	  expect(sc).toMatchSnapshot();
 	});
 });

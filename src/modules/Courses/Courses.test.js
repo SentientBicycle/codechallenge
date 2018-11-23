@@ -8,7 +8,7 @@ configure({ adapter: new Adapter() });
 
 describe("Courses", () =>{
 	it('Renders properly', () => {
-	  const course = shallow(<Courses/>);
-	  expect(course).toMatchSnapshot();
+	  const courses = shallow(<Courses/>);
+	  expect(courses).toMatchSnapshot();
 	});
 });

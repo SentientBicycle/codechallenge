@@ -46,10 +46,6 @@ class Course extends Component {
     return a.last_name.toLowerCase().localeCompare(b.last_name.toLowerCase());
   }
 
-  sortByScore = (a, b) => {
-    return b.currentClassScore - a.currentClassScore;
-  }
-
   setCurrentCourse = (student) => {
     const moddedStudent = {...student};
     moddedStudent.currentClass = parseInt(this.props.match.params.courseid);

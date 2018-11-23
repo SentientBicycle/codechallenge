@@ -1,14 +1,14 @@
-#Student Comparator application
+# Student Comparator application
 
 This site uses the module/component folder structure.
 
-###To create a new route
+### To create a new route
 * Add module to `/src/modules` with camel case naming scheme
 * Add import to `/src/modules/App/App.js` and add ```
 <Route exact path='/PATH_NAME' component={ComponentName}/>
 ```
 
-###Course Addition
+### Course Addition
 
 Course data can be found in `/src/modules/Courses/resources/Courses.json`
 
@@ -21,7 +21,7 @@ To add a course, add to the json file in the structure of
 
 To add a category, add to the json file in the structure of `"New Subject Category":[]`
 
-###Student Addition
+### Student Addition
 
 Student data can be found in `/src/modules/Courses/resources/Students.json`
 
@@ -31,7 +31,7 @@ To add a student, add to the json file in the structure of
 
 To add a class to a student, find the student in the Students.json file and add the class id and score to the "Classes" array.
 
-##Other tools used
+## Other tools used
 [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

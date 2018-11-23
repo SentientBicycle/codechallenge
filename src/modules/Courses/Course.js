@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import studentData from './resources/Students.json';
 import Student from './components/Student/Student';
-import StudentCompare from './components/Student/StudentCompare';
 import CompareModal from './components/CompareModal/CompareModal';
 import style from './Courses.module.css';
-import { Button } from 'react-bootstrap';
+
 
 class Course extends Component {
  

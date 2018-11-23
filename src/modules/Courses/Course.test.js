@@ -43,7 +43,7 @@ describe("Set Current Course", () =>{
 	it('adds the current course to student object', () => {
 		const course = shallow(<Course {...props}/>);
 		course.instance({ params: props.match.params});
-		console.log(course);
+
 		let student =   {
 	       "Classes":  [
 	          {
@@ -69,10 +69,51 @@ describe("Set Current Course", () =>{
 	       "id": 25,
 	       "last_name": "Flanagan",
 	     };
-		expect(("currentClass" in student)).toBe(false);
-		expect(("currentClassScore" in student)).toBe(false);
+		expect(("currentClass" in student)).toBeFalsy();
+		expect(("currentClassScore" in student)).toBeFalsy();
 		student = course.instance().setCurrentCourse(student);
-		expect(("currentClass" in student)).toBe(true);
-		expect(("currentClassScore" in student)).toBe(true);
+		expect(("currentClass" in student)).toBeTruthy();
+		expect(("currentClassScore" in student)).toBeTruthy();
+	});
+});
+
+describe("already contains student", () =>{
+
+	const props = {
+		"match":
+			{
+				"params": {
+					"courseid": 83,
+					"coursename": "Drawing"
+			}
+		}
+	}
+
+	it("checks if the array of students already contains the student", () =>{
+		const course = shallow(<Course {...props}/>);
+		course.instance({ params: props.match.params});
+
+		const students = [{
+			id:0
+		},{
+			id:1
+		},{
+			id:2
+		},{
+			id:3
+		},{
+			id:4
+		},{
+			id:5
+		},{
+			id:6
+		}];
+
+		expect(course.instance().hasID(students, 0)).toBeTruthy();
+		expect(course.instance().hasID(students, 3)).toBeTruthy();
+		expect(course.instance().hasID(students, 6)).toBeTruthy();
+		expect(course.instance().hasID(students, 26)).toBeFalsy();
+		expect(course.instance().hasID(students, 435)).toBeFalsy();
+		expect(course.instance().hasID(students, 42)).toBeFalsy();
 	});
 });

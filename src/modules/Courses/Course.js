@@ -21,14 +21,14 @@ class Course extends Component {
   }
 
   getStudents = (courseid) => {
-    const filteredStudents = studentData.filter(student => {return this.hasCourse(student.Classes, courseid)});
+    const filteredStudents = studentData.filter(student => {return this.hasID(student.Classes, courseid)});
     return filteredStudents.map(student => this.setCurrentCourse(student));
   }
 
-  hasCourse = (courses, courseID) => {
-    let hasClass = false;
-    courses.forEach(course => {if (course.id === courseID) hasClass = true})
-    return hasClass;
+  hasID = (arr, id) => {
+    let hasid = false;
+    arr.forEach(ar => {if (ar.id === id) hasid = true})
+    return hasid;
   }
 
   addToRemoveFromComparator = (studentID) => {
@@ -36,22 +36,11 @@ class Course extends Component {
     const newState = {...this.state};
     let indexOfStudent;
     const singleStudent = newState.students.filter((student, index) =>{if(student.id === sid){indexOfStudent = index;} return student.id === sid;})[0];
-    const newCompare = this.alreadyContainsStudent(newState.comparing, sid) ? newState.comparing.filter(student => {return student.id !== sid}) : newState.comparing.concat(singleStudent);
+    const newCompare = this.hasID(newState.comparing, sid) ? newState.comparing.filter(student => {return student.id !== sid}) : newState.comparing.concat(singleStudent);
     newState.students[indexOfStudent].active = !newState.students[indexOfStudent].active;
     newState.comparing = newCompare.sort((a,b)=>this.sortByLastName(a,b))
     this.setState(newState);
   }
-
-  alreadyContainsStudent = (students, sid) => {
-    let hasStudent = false;
-    students.forEach(student =>{
-      if(student.id === sid) {
-        hasStudent = true;
-      }
-    });
-    return hasStudent;
-  }
-
 
   sortByLastName = (a, b) => {
     return a.last_name.toLowerCase().localeCompare(b.last_name.toLowerCase());

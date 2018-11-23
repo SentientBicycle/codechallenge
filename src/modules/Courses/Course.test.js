@@ -25,4 +25,5 @@ describe("Course", () =>{
 	  course.instance({ params: props.match.params});
 	  	expect(course).toMatchSnapshot();
 	});
+
 });

@@ -77,7 +77,7 @@ describe("Set Current Course", () =>{
 	});
 });
 
-describe("already contains student", () =>{
+describe("already contains id", () =>{
 
 	const props = {
 		"match":
@@ -116,4 +116,23 @@ describe("already contains student", () =>{
 		expect(course.instance().hasID(students, 435)).toBeFalsy();
 		expect(course.instance().hasID(students, 42)).toBeFalsy();
 	});
+});
+
+describe("Add to and remove from comparator", () =>{
+
+	const props = {
+		"match":
+			{
+				"params": {
+					"courseid": 134,
+					"coursename": "German"
+			}
+		}
+	}
+
+	it("Adds student with id to comparator array", () =>{
+		const course = shallow(<Course {...props}/>);
+		course.instance({ params: props.match.params});
+	});
+
 });

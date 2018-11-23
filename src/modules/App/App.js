@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Header from './components/Header/Header';
-import Main from '../Main/Main';
 import Course from '../Courses/Course';
+import Courses from '../Courses/Courses';
 import { Switch, Route } from 'react-router-dom'
 
 class App extends Component {
@@ -15,8 +15,8 @@ class App extends Component {
         <Header/>
         <main>
           <Switch>
-            <Route exact path='/' component={Main}/>
-            <Route exact path='/codechallenge' component={Main}/>
+            <Route exact path='/' component={Courses}/>
+            <Route exact path='/codechallenge' component={Courses}/>
             <Route exact path='/codechallenge/:courseid/:coursename' component={Course}/>
             <Route exact path='/:courseid/:coursename' component={Course}/>
           </Switch>

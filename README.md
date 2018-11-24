@@ -4,9 +4,7 @@ This site uses the module/component folder structure.
 
 ### To create a new route
 * Add module to `/src/modules` with camel case naming scheme
-* Add import to `/src/modules/App/App.js` and add ```
-<Route exact path='/PATH_NAME' component={ComponentName}/>
-```
+* Add import to `/src/modules/App/App.js` and add `<Route exact path='/PATH_NAME' component={ComponentName}/>`
 
 ### Course Addition
 

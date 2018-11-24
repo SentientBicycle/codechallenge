@@ -45,6 +45,7 @@ To add test add file of `TESTNAME.test.js` where TESTNAME is the name of the com
 Add the following to every component test file:
 
 `import {shallow, configure} from 'enzyme';`
+
 `import Adapter from 'enzyme-adapter-react-16';`
 
 `configure({ adapter: new Adapter() });`

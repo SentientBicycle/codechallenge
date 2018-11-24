@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { Modal, ButtonToolbar, Button } from 'react-bootstrap';
-import StudentCompare from '../Student/StudentCompare'
-import style from '../../Courses.module.css'
+import React, { Component } from "react";
+import { Modal, ButtonToolbar, Button } from "react-bootstrap";
+import StudentCompare from "../Student/StudentCompare";
+import style from "../../Courses.module.css";
 
 class CompareModal extends Component {
   constructor(props, context) {
@@ -26,7 +26,11 @@ class CompareModal extends Component {
   render() {
     return (
       <ButtonToolbar>
-        <Button bsStyle="primary" className={style['compare-button']}onClick={this.handleShow}>
+        <Button
+          bsStyle="primary"
+          className={style["compare-button"]}
+          onClick={this.handleShow}
+        >
           Compare Selected Students
         </Button>
 
@@ -35,18 +39,20 @@ class CompareModal extends Component {
           show={this.state.show}
           onHide={this.handleHide}
           dialogClassName="custom-modal"
-          className={style['modal-compare']}
+          className={style["modal-compare"]}
         >
           <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-lg">
-              {this.props.coursename} 
+              {this.props.coursename}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <h4>Comparison</h4>
             <div>
-              {this.props.students.map((student, index)=> {return <StudentCompare key={index} student={student}/>})}
-              </div>
+              {this.props.students.map((student, index) => {
+                return <StudentCompare key={index} student={student} />;
+              })}
+            </div>
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.handleHide}>Close</Button>

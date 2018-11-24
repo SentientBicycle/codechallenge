@@ -1,15 +1,15 @@
 {
   "main.css": "/codechallenge/static/css/main.8806a1ff.chunk.css",
-  "main.js": "/codechallenge/static/js/main.913cee9f.chunk.js",
-  "main.js.map": "/codechallenge/static/js/main.913cee9f.chunk.js.map",
+  "main.js": "/codechallenge/static/js/main.b73f5d17.chunk.js",
+  "main.js.map": "/codechallenge/static/js/main.b73f5d17.chunk.js.map",
   "static/css/1.3b0960b2.chunk.css": "/codechallenge/static/css/1.3b0960b2.chunk.css",
-  "static/js/1.a8245cea.chunk.js": "/codechallenge/static/js/1.a8245cea.chunk.js",
-  "static/js/1.a8245cea.chunk.js.map": "/codechallenge/static/js/1.a8245cea.chunk.js.map",
+  "static/js/1.28cccdc1.chunk.js": "/codechallenge/static/js/1.28cccdc1.chunk.js",
+  "static/js/1.28cccdc1.chunk.js.map": "/codechallenge/static/js/1.28cccdc1.chunk.js.map",
   "runtime~main.js": "/codechallenge/static/js/runtime~main.0c3866b8.js",
   "runtime~main.js.map": "/codechallenge/static/js/runtime~main.0c3866b8.js.map",
   "static/css/1.3b0960b2.chunk.css.map": "/codechallenge/static/css/1.3b0960b2.chunk.css.map",
   "static/css/main.8806a1ff.chunk.css.map": "/codechallenge/static/css/main.8806a1ff.chunk.css.map",
   "index.html": "/codechallenge/index.html",
-  "precache-manifest.c20c99e40d29c357d566f75129de3592.js": "/codechallenge/precache-manifest.c20c99e40d29c357d566f75129de3592.js",
+  "precache-manifest.58b3a0cbf596c0b705ea308c48d81058.js": "/codechallenge/precache-manifest.58b3a0cbf596c0b705ea308c48d81058.js",
   "service-worker.js": "/codechallenge/service-worker.js"
 }

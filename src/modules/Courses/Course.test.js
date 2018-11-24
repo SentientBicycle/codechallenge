@@ -130,9 +130,13 @@ describe("Add to and remove from comparator", () =>{
 		}
 	}
 
-	it("Adds student with id to comparator array", () =>{
+	it("Adds student with id to comparator array then removes it", () =>{
 		const course = shallow(<Course {...props}/>);
-		course.instance({ params: props.match.params});
+		const instance = course.instance({ params: props.match.params});
+		instance.addToRemoveFromComparator(865);
+		expect(instance.state.comparing).toHaveLength(1);
+		instance.addToRemoveFromComparator(865);
+		expect(instance.state.comparing).toHaveLength(0);
 	});
 
 });

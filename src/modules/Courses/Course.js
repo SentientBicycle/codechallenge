@@ -12,8 +12,6 @@ class Course extends Component {
     super(props);
 
     this.state = {
-      courseid: parseInt(props.match.params.courseid),
-      coursename: props.match.params.coursename,
       students: this.getStudents(parseInt(props.match.params.courseid)),
       comparing: []
     }
@@ -59,7 +57,7 @@ class Course extends Component {
     return (
     	<React.Fragment>
         <section>
-        <h1>{this.state.coursename}</h1>
+        <h1>{this.props.match.params.coursename}</h1>
           <div className={`${style.container} ${style['container-left']}`}>
             {this.state.students.map((student, index) => {
               return <Student 
@@ -72,7 +70,7 @@ class Course extends Component {
             }
           </div>
         </section>
-        <CompareModal coursename={this.state.coursename} students={this.state.comparing}/>
+        <CompareModal coursename={this.props.match.params.coursename} students={this.state.comparing}/>
       </React.Fragment>
     );
   }
